@@ -7,7 +7,6 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.example.marvel_app.presentation.MainViewModel
 import com.example.marvel_app.ui.HeroDetailScreen.HERO_ID
 import com.example.marvel_app.ui.screens.HeroDetailScreen
 import com.example.marvel_app.ui.screens.HeroListScreen
@@ -33,7 +32,7 @@ object HeroDetailScreen {
 }
 
 @Composable
-fun MarvelApp(viewModel: MainViewModel) {
+fun MarvelApp() {
     val navController = rememberNavController()
     NavHost(
         navController = navController,
